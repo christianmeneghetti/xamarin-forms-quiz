@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz.Page1"
+             Title="1ª Pergunta"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Melhor classe no wow Shadowlands?"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                TextColor="White"
+                FontSize="Large"/>
+            <Entry x:Name="eResposta"
+                HorizontalOptions="FillAndExpand" 
+                Placeholder="Digite a sua resposta"
+                BackgroundColor="White"/>
+            <Button Text="Responder" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

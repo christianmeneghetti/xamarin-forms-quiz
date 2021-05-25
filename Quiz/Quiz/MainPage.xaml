@@ -1,14 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Quiz.MainPage">
+             x:Class="Quiz.MainPage"
+             Title="Decifra-me"
+             BackgroundColor="Black">
 
     <StackLayout>
         <Label Text="Decifra-me ou te devoro" 
-              HorizontalOptions="Center" 
-              VerticalOptions="CenterAndExpand"/>
+            HorizontalOptions="Center" 
+            VerticalOptions="CenterAndExpand"
+            FontSize="Large"
+            TextColor="White"/>
         <Image Source="esfinge" Aspect="AspectFit"/>
-        <Button Text="Jogar" />
+        <Button Text="Jogar" Clicked="Button_Clicked"/>
     </StackLayout>
 
 </ContentPage>

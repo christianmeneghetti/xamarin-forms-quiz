@@ -16,6 +16,7 @@
                 Placeholder="Digite a sua resposta"
                 BackgroundColor="White"/>
             <Button Text="Responder" Clicked="Button_Clicked"/>
+            <Button Text="Voltar ao inicio" Clicked="Button_Clicked_1"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

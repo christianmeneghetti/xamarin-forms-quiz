@@ -20,14 +20,26 @@ namespace Quiz
         private void Button_Clicked(object sender, EventArgs e)
         {
             String texto = eResposta.Text;
-            if(texto.ToUpper() == "HUNTER")
+            if(texto == null)
             {
-                Navigation.PushAsync(new Page2());
+                DisplayAlert("A Esfinge fala:", "Seus miolos são apetitosos?", "Ok");
             }
             else
             {
-
+                if (texto.ToUpper() == "HUNTER")
+                {
+                    Navigation.PushAsync(new Page2());
+                }
+                else
+                {
+                    DisplayAlert("A Esfinge fala:", "Seus miolos são apetitosos?", "Ok");
+                }
             }
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
         }
     }
 }

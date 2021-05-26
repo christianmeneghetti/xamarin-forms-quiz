@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Quiz.Page2">
+             x:Class="Quiz.Page2"
+             BackgroundColor="Black"
+             Title="2ª Pergunta">
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Resultado de 3+4?"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" 
+                TextColor="White"
+                FontSize="Large"/>
+            <Entry x:Name="eResposta"
+                HorizontalOptions="FillAndExpand" 
+                Placeholder="Digite a sua resposta"
+                BackgroundColor="White"/>
+            <Button Text="Responder" Clicked="Button_Clicked"/>
+            <Button Text="Voltar ao inicio" Clicked="Button_Clicked_1"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
